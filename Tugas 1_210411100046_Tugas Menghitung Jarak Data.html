@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>&lt;no title&gt; &#8212; My sample book</title>
+    <title>TUGAS 1 &#8212; My sample book</title>
   
   
   
@@ -155,7 +155,8 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>TUGAS 1</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="Tugas%202_Roy%20Suwanda_Tugas%20Naive%20Bayes.html"><strong>Tugas 2</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
@@ -342,7 +343,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1><no title></h1>
+    <h1>TUGAS 1</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -351,9 +352,16 @@ document.write(`
                 <h2> Contents </h2>
             </div>
             <nav aria-label="Page">
-                <ul class="simple visible nav section-nav flex-column">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tipe-data"><strong>1. Tipe Data</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menetukan-jarak-dari-data"><strong>2. Menetukan Jarak dari data</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mengambil-data"><strong>Mengambil Data</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-jarak-pada-tipe-data-numerik"><strong>1. Menghitung Jarak pada tipe data numerik</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ambil-sampel-data-gaji">Ambil sampel data gaji</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-jarak-pada-tipe-data-kategorical"><strong>2. Menghitung Jarak Pada Tipe Data Kategorical</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-jarak-pada-tipe-data-binary-biner"><strong>3. Menghitung Jarak Pada Tipe Data Binary(biner)</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-jarak-pada-tipe-data-ordinal"><strong>4. Menghitung Jarak Pada Tipe Data Ordinal</strong></a></li>
 </ul>
-
             </nav>
         </div>
     </div>
@@ -364,7 +372,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <p>#<strong>TUGAS 1</strong></p>
+  <div class="tex2jax_ignore mathjax_ignore section" id="tugas-1">
+<h1><strong>TUGAS 1</strong><a class="headerlink" href="#tugas-1" title="Permalink to this heading">#</a></h1>
 <p><strong>Dissimilarity- Menghitung Jarak Antar Data</strong></p>
 <ol class="arabic simple">
 <li><p>memahami tipe data</p></li>
@@ -376,7 +385,8 @@ document.write(`
 <li><p>Binary Asimetris / Simestris</p></li>
 <li><p>Ordinal</p></li>
 </ul>
-<p><strong>1. Tipe Data</strong></p>
+<div class="section" id="tipe-data">
+<h2><strong>1. Tipe Data</strong><a class="headerlink" href="#tipe-data" title="Permalink to this heading">#</a></h2>
 <p>1.1 Atribut Nominal / Kategorical</p>
 <p>Nominal berarti “berkaitan dengan nama.” Nilai atribut nominal adalah simbol atau nama benda. Setiap nilai mewakili beberapa jenis kategori, kode, atau status, sehingga atribut nominal juga disebut sebagai kategori. Nilai tidak memiliki urutan yang berarti. Dalam ilmu komputer, nilai juga dikenal sebagai pencacahan.</p>
 <p>1.2 Atribut Binary (Biner)</p>
@@ -385,7 +395,9 @@ document.write(`
 <p>Atribut ordinal adalah atribut dengan kemungkinan nilai yang memiliki urutan atau peringkat yang bermakna di antara mereka, tetapi besarnya antara nilai-nilai yang berurutan tidak diketahui.</p>
 <p>1.4 Numeric</p>
 <p>Atribut numerik bersifat kuantitatif; yaitu, itu adalah kuantitas yang dapat diukur, direpresentasikan dalam bilangan bulat atau nilai nyata. Atribut numerik dapat berskala interval atau berskala rasio.</p>
-<p><strong>2. Menetukan Jarak dari data</strong></p>
+</div>
+<div class="section" id="menetukan-jarak-dari-data">
+<h2><strong>2. Menetukan Jarak dari data</strong><a class="headerlink" href="#menetukan-jarak-dari-data" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%capture</span>
@@ -405,10 +417,12 @@ document.write(`
 </div>
 </div>
 </div>
-<p><strong>Mengambil Data</strong></p>
+</div>
+<div class="section" id="mengambil-data">
+<h2><strong>Mengambil Data</strong><a class="headerlink" href="#mengambil-data" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;https://raw.githubusercontent.com/RoySuwanda-21-046/pendata/gh-pages/data.csv&quot;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;https://raw.githubusercontent.com/RoySuwanda-21-046/data/main/data.csv&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -421,7 +435,7 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-5b7c664e-aaca-4470-9a2d-d7b6a8154a39">
+  <div id="df-52f05811-9ea2-4411-9ef2-42c9d350704c">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -489,7 +503,7 @@ document.write(`
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-5b7c664e-aaca-4470-9a2d-d7b6a8154a39')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-52f05811-9ea2-4411-9ef2-42c9d350704c')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -540,12 +554,12 @@ document.write(`
 
       <script>
         const buttonEl =
-          document.querySelector('#df-5b7c664e-aaca-4470-9a2d-d7b6a8154a39 button.colab-df-convert');
+          document.querySelector('#df-52f05811-9ea2-4411-9ef2-42c9d350704c button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-5b7c664e-aaca-4470-9a2d-d7b6a8154a39');
+          const element = document.querySelector('#df-52f05811-9ea2-4411-9ef2-42c9d350704c');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -566,8 +580,12 @@ document.write(`
   </div>
   </div></div>
 </div>
-<p><strong>1. Menghitung Jarak pada tipe data numerik</strong></p>
-<p>Ambil sampel data gaji</p>
+</div>
+<div class="section" id="menghitung-jarak-pada-tipe-data-numerik">
+<h2><strong>1. Menghitung Jarak pada tipe data numerik</strong><a class="headerlink" href="#menghitung-jarak-pada-tipe-data-numerik" title="Permalink to this heading">#</a></h2>
+</div>
+<div class="section" id="ambil-sampel-data-gaji">
+<h2>Ambil sampel data gaji<a class="headerlink" href="#ambil-sampel-data-gaji" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_gaji</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s2">&quot;gaji&quot;</span><span class="p">]]</span>
@@ -577,7 +595,7 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-b34adbbb-369d-40d2-a54b-260f2851d90f">
+  <div id="df-6c874bcc-806a-416f-9084-e5c01ec53f03">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -620,7 +638,7 @@ document.write(`
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-b34adbbb-369d-40d2-a54b-260f2851d90f')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-6c874bcc-806a-416f-9084-e5c01ec53f03')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -671,12 +689,12 @@ document.write(`
 
       <script>
         const buttonEl =
-          document.querySelector('#df-b34adbbb-369d-40d2-a54b-260f2851d90f button.colab-df-convert');
+          document.querySelector('#df-6c874bcc-806a-416f-9084-e5c01ec53f03 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-b34adbbb-369d-40d2-a54b-260f2851d90f');
+          const element = document.querySelector('#df-6c874bcc-806a-416f-9084-e5c01ec53f03');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -789,7 +807,9 @@ document.write(`
 </div>
 </div>
 </div>
-<p><strong>2. Menghitung Jarak Pada Tipe Data Kategorical</strong></p>
+</div>
+<div class="section" id="menghitung-jarak-pada-tipe-data-kategorical">
+<h2><strong>2. Menghitung Jarak Pada Tipe Data Kategorical</strong><a class="headerlink" href="#menghitung-jarak-pada-tipe-data-kategorical" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_hobby</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s2">&quot;hobby&quot;</span><span class="p">]]</span>
@@ -799,7 +819,7 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-130ca40b-ae7a-4bf9-bf2d-766d65733915">
+  <div id="df-dd8b736d-3986-4ebf-a8bc-a8c93867d545">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -842,7 +862,7 @@ document.write(`
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-130ca40b-ae7a-4bf9-bf2d-766d65733915')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-dd8b736d-3986-4ebf-a8bc-a8c93867d545')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -893,12 +913,12 @@ document.write(`
 
       <script>
         const buttonEl =
-          document.querySelector('#df-130ca40b-ae7a-4bf9-bf2d-766d65733915 button.colab-df-convert');
+          document.querySelector('#df-dd8b736d-3986-4ebf-a8bc-a8c93867d545 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-130ca40b-ae7a-4bf9-bf2d-766d65733915');
+          const element = document.querySelector('#df-dd8b736d-3986-4ebf-a8bc-a8c93867d545');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1015,7 +1035,9 @@ dimas      0        1    1      0
 </div>
 </div>
 </div>
-<p><strong>3. Menghitung Jarak Pada Tipe Data Binary(biner)</strong></p>
+</div>
+<div class="section" id="menghitung-jarak-pada-tipe-data-binary-biner">
+<h2><strong>3. Menghitung Jarak Pada Tipe Data Binary(biner)</strong><a class="headerlink" href="#menghitung-jarak-pada-tipe-data-binary-biner" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_status</span><span class="o">=</span><span class="n">df</span><span class="p">[[</span><span class="s2">&quot;jenis kelamin&quot;</span><span class="p">,</span><span class="s2">&quot;status&quot;</span><span class="p">]]</span>
@@ -1025,7 +1047,7 @@ dimas      0        1    1      0
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-6067bfcd-b86c-4a76-8a2b-280698bb28e5">
+  <div id="df-eadcebd9-254c-452e-936c-3418a5dd5397">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1073,7 +1095,7 @@ dimas      0        1    1      0
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-6067bfcd-b86c-4a76-8a2b-280698bb28e5')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-eadcebd9-254c-452e-936c-3418a5dd5397')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -1124,12 +1146,12 @@ dimas      0        1    1      0
 
       <script>
         const buttonEl =
-          document.querySelector('#df-6067bfcd-b86c-4a76-8a2b-280698bb28e5 button.colab-df-convert');
+          document.querySelector('#df-eadcebd9-254c-452e-936c-3418a5dd5397 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-6067bfcd-b86c-4a76-8a2b-280698bb28e5');
+          const element = document.querySelector('#df-eadcebd9-254c-452e-936c-3418a5dd5397');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1194,12 +1216,11 @@ ike        2        1    0      2
 dimas      0        1    2      0
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
 </div>
 </div>
 </div>
-<p><strong>4. Menghitung Jarak Pada Tipe Data Ordinal</strong></p>
+<div class="section" id="menghitung-jarak-pada-tipe-data-ordinal">
+<h2><strong>4. Menghitung Jarak Pada Tipe Data Ordinal</strong><a class="headerlink" href="#menghitung-jarak-pada-tipe-data-ordinal" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_pendidikan</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s2">&quot;pendidikan&quot;</span><span class="p">]]</span>
@@ -1209,7 +1230,7 @@ dimas      0        1    2      0
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-06e1b007-d950-416a-b74d-1d9ee7059f3d">
+  <div id="df-d385a3c9-c13b-432d-b791-b521ea27b83c">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1252,7 +1273,7 @@ dimas      0        1    2      0
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-06e1b007-d950-416a-b74d-1d9ee7059f3d')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-d385a3c9-c13b-432d-b791-b521ea27b83c')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -1303,12 +1324,12 @@ dimas      0        1    2      0
 
       <script>
         const buttonEl =
-          document.querySelector('#df-06e1b007-d950-416a-b74d-1d9ee7059f3d button.colab-df-convert');
+          document.querySelector('#df-d385a3c9-c13b-432d-b791-b521ea27b83c button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-06e1b007-d950-416a-b74d-1d9ee7059f3d');
+          const element = document.querySelector('#df-d385a3c9-c13b-432d-b791-b521ea27b83c');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1386,6 +1407,8 @@ S3   8.0  7.0  6.0  5.0  4.0  3.0  2.0  1.0  0.0
 <p>Dalam program di atas, didefinisikan sebuah dictionary ranking yang memuat ranking pendidikan dari yang paling rendah (SD) hingga yang tertinggi (S3). Lalu, didefinisikan sebuah fungsi ordinal_distance yang menghitung jarak dissimilarity antara dua data ordinal menggunakan rumus di atas.</p>
 <p>Kemudian, dilakukan perulangan untuk mengisi matriks dissimilarity_matrix dengan nilai jarak dissimilarity antara masing-masing pendidikan reponden menggunakan fungsi ordinal_distance. Matriks ini kemudian diubah menjadi data frame df_dissimilarity dengan menggunakan pd.DataFrame dan diberi label pada baris dan kolom menggunakan columns dan index.</p>
 <p>Dengan demikian, output dari program ini adalah sebuah tabel dataFrame yang menunjukkan jarak dissimilarity antara masing-masing pendidikan reponden pada dataset menggunakan metode Ordinal Distance.</p>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -1453,9 +1476,16 @@ S3   8.0  7.0  6.0  5.0  4.0  3.0  2.0  1.0  0.0
     <i class="fa-solid fa-list"></i> Contents
   </div>
   <nav class="bd-toc-nav page-toc">
-    <ul class="simple visible nav section-nav flex-column">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tipe-data"><strong>1. Tipe Data</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menetukan-jarak-dari-data"><strong>2. Menetukan Jarak dari data</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mengambil-data"><strong>Mengambil Data</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-jarak-pada-tipe-data-numerik"><strong>1. Menghitung Jarak pada tipe data numerik</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ambil-sampel-data-gaji">Ambil sampel data gaji</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-jarak-pada-tipe-data-kategorical"><strong>2. Menghitung Jarak Pada Tipe Data Kategorical</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-jarak-pada-tipe-data-binary-biner"><strong>3. Menghitung Jarak Pada Tipe Data Binary(biner)</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-jarak-pada-tipe-data-ordinal"><strong>4. Menghitung Jarak Pada Tipe Data Ordinal</strong></a></li>
 </ul>
-
   </nav></div>
 
 </div></div>
