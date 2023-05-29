@@ -1,11 +1,10 @@
-# Welcome to your Jupyter Book
+# Selamat Datang di Jupyter Book Saya
 
-This is a small sample book to give you a feel for how book content is
-structured.
-It shows off a few of the major file types, as well as some sample content.
-It does not go in-depth into any particular topic - check out [the Jupyter Book documentation](https://jupyterbook.org) for more information.
+Penambangan Data atau Data Minning adalah salah satu mata kuliah di Teknik Informatika.
+Mata kuliah ini akan membahas mengenai  pemrosesan dan eksplorasi set data, dengan menggunakan berbagai macam metode-metode yang ada. 
+Website sederhana ini saya gunakan sebagai rekapan dari tugas-tugas yang diberikan pada mata kuliah penambangan data ini.
 
-Check out the content pages bundled with this sample book to see more.
+Lihat halaman konten yang dibundel dengan Jupyter Book contoh ini untuk melihat lebih banyak.
 
 ```{tableofcontents}
 ```
