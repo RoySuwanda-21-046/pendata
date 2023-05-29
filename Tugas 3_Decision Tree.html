@@ -63,7 +63,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'Tugas 3_Decision Tree';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="KNN dengan PCA" href="KNN_Dengan_PCA.html" />
+    <link rel="next" title="Klasifikasi Iris MLP" href="Klasifikasi%20Iris%20MLP.html" />
     <link rel="prev" title="UTS" href="UTS_210411100046_Roy%20Suwanda.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -160,7 +160,8 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="Tugas%202_Roy%20Suwanda_Tugas%20Naive%20Bayes.html"><strong>Naive Bayes</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="UTS_210411100046_Roy%20Suwanda.html"><strong>UTS</strong></a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>Tugas 3 Decision Tree</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="KNN_Dengan_PCA.html">KNN dengan PCA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Klasifikasi%20Iris%20MLP.html"><strong>Klasifikasi Iris MLP</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="KNN_Dengan_PCA.html"><strong>KNN dengan PCA</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
 </ul>
@@ -415,7 +416,7 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-bd2fb3e2-084e-4de6-b025-91c204f5cce9">
+  <div id="df-7fc3d22f-a7aa-40e5-b128-633b54457fba">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -535,7 +536,7 @@ document.write(`
 </table>
 <p>150 rows × 5 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-bd2fb3e2-084e-4de6-b025-91c204f5cce9')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-7fc3d22f-a7aa-40e5-b128-633b54457fba')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -586,12 +587,12 @@ document.write(`
 
       <script>
         const buttonEl =
-          document.querySelector('#df-bd2fb3e2-084e-4de6-b025-91c204f5cce9 button.colab-df-convert');
+          document.querySelector('#df-7fc3d22f-a7aa-40e5-b128-633b54457fba button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-bd2fb3e2-084e-4de6-b025-91c204f5cce9');
+          const element = document.querySelector('#df-7fc3d22f-a7aa-40e5-b128-633b54457fba');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -654,7 +655,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/a03038d38b8a5d2fef6cff755c41f0c13a0ccbf12078465983633450543d13ef.svg" src="_images/a03038d38b8a5d2fef6cff755c41f0c13a0ccbf12078465983633450543d13ef.svg" /></div>
+<img alt="_images/6bdf4e70ef2b74ae891e6b2aa8c1d18b0d74f0097a9590ee01001f660cfdae55.svg" src="_images/6bdf4e70ef2b74ae891e6b2aa8c1d18b0d74f0097a9590ee01001f660cfdae55.svg" /></div>
 </div>
 </div>
 <div class="section" id="prediksi">
@@ -687,7 +688,7 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-c15b7803-5623-4d1a-9e40-8ada20662bf5">
+  <div id="df-52218c18-e264-4c2c-ad07-0f19e82cb3d0">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -865,7 +866,7 @@ document.write(`
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-c15b7803-5623-4d1a-9e40-8ada20662bf5')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-52218c18-e264-4c2c-ad07-0f19e82cb3d0')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -916,12 +917,12 @@ document.write(`
 
       <script>
         const buttonEl =
-          document.querySelector('#df-c15b7803-5623-4d1a-9e40-8ada20662bf5 button.colab-df-convert');
+          document.querySelector('#df-52218c18-e264-4c2c-ad07-0f19e82cb3d0 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-c15b7803-5623-4d1a-9e40-8ada20662bf5');
+          const element = document.querySelector('#df-52218c18-e264-4c2c-ad07-0f19e82cb3d0');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1004,7 +1005,7 @@ dari data prediksi 29 / 30 * 100% = 96.67%
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-c22d6e35-63c4-42d8-b3b9-02d9ad2d200e">
+  <div id="df-0661fe7a-3560-4c32-8eaa-8bc9f18c5fd1">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1081,7 +1082,7 @@ dari data prediksi 29 / 30 * 100% = 96.67%
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-c22d6e35-63c4-42d8-b3b9-02d9ad2d200e')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-0661fe7a-3560-4c32-8eaa-8bc9f18c5fd1')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -1132,12 +1133,12 @@ dari data prediksi 29 / 30 * 100% = 96.67%
 
       <script>
         const buttonEl =
-          document.querySelector('#df-c22d6e35-63c4-42d8-b3b9-02d9ad2d200e button.colab-df-convert');
+          document.querySelector('#df-0661fe7a-3560-4c32-8eaa-8bc9f18c5fd1 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-c22d6e35-63c4-42d8-b3b9-02d9ad2d200e');
+          const element = document.querySelector('#df-0661fe7a-3560-4c32-8eaa-8bc9f18c5fd1');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1415,7 +1416,7 @@ dari data prediksi 29 / 30 * 100% = 96.67%
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-cf5ffedf-8ec0-42e2-a3eb-8a81db257e3c">
+  <div id="df-f5a38790-0ba6-4a2c-a32c-4354e244277a">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1486,7 +1487,7 @@ dari data prediksi 29 / 30 * 100% = 96.67%
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-cf5ffedf-8ec0-42e2-a3eb-8a81db257e3c')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-f5a38790-0ba6-4a2c-a32c-4354e244277a')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -1537,12 +1538,12 @@ dari data prediksi 29 / 30 * 100% = 96.67%
 
       <script>
         const buttonEl =
-          document.querySelector('#df-cf5ffedf-8ec0-42e2-a3eb-8a81db257e3c button.colab-df-convert');
+          document.querySelector('#df-f5a38790-0ba6-4a2c-a32c-4354e244277a button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-cf5ffedf-8ec0-42e2-a3eb-8a81db257e3c');
+          const element = document.querySelector('#df-f5a38790-0ba6-4a2c-a32c-4354e244277a');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1726,7 +1727,7 @@ cv_scores mean:0.8733333333333333
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-9a0c38a0-f3bf-4603-9ec1-c828125e4531">
+  <div id="df-896e4c84-8538-437e-a5d3-a8cafb2305c6">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1846,7 +1847,7 @@ cv_scores mean:0.8733333333333333
 </table>
 <p>150 rows × 5 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-9a0c38a0-f3bf-4603-9ec1-c828125e4531')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-896e4c84-8538-437e-a5d3-a8cafb2305c6')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -1897,12 +1898,12 @@ cv_scores mean:0.8733333333333333
 
       <script>
         const buttonEl =
-          document.querySelector('#df-9a0c38a0-f3bf-4603-9ec1-c828125e4531 button.colab-df-convert');
+          document.querySelector('#df-896e4c84-8538-437e-a5d3-a8cafb2305c6 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-9a0c38a0-f3bf-4603-9ec1-c828125e4531');
+          const element = document.querySelector('#df-896e4c84-8538-437e-a5d3-a8cafb2305c6');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -2073,11 +2074,11 @@ f1-score_Naive Bayes : 1.000</strong></p></li>
       </div>
     </a>
     <a class="right-next"
-       href="KNN_Dengan_PCA.html"
+       href="Klasifikasi%20Iris%20MLP.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">KNN dengan PCA</p>
+        <p class="prev-next-title"><strong>Klasifikasi Iris MLP</strong></p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
