@@ -63,7 +63,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'KNN_Dengan_PCA';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Content with notebooks" href="notebooks.html" />
+    <link rel="next" title="Tugas Menghitung Manual Backpropagation" href="Tugas_Menghitung_manual_backpropagation.html" />
     <link rel="prev" title="Klasifikasi Iris MLP" href="Klasifikasi%20Iris%20MLP.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -163,7 +163,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="Tugas%203_Decision%20Tree.html"><strong>Tugas  Decision Tree</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="Klasifikasi%20Iris%20MLP.html"><strong>Klasifikasi Iris MLP</strong></a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>KNN dengan PCA</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Tugas_Menghitung_manual_backpropagation.html"><strong>Tugas Menghitung Manual Backpropagation</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
 </ul>
 
@@ -211,6 +211,37 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/RoySuwanda-21-046/pendata/blob/gh-pages/docs/KNN_Dengan_PCA.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onColab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
 <div class="dropdown dropdown-source-buttons">
   <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
     <i class="fab fa-github"></i>
@@ -219,7 +250,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+      <li><a href="https://github.com/RoySuwanda-21-046/pendata" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -236,7 +267,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FKNN_Dengan_PCA.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/RoySuwanda-21-046/pendata/issues/new?title=Issue%20on%20page%20%2FKNN_Dengan_PCA.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -410,7 +441,7 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-0dbe3a73-b417-458e-8396-67826633ff94">
+  <div id="df-a0812c7d-8656-4668-ba39-c8da4aaf2bfe">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -530,7 +561,7 @@ document.write(`
 </table>
 <p>150 rows × 5 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-0dbe3a73-b417-458e-8396-67826633ff94')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-a0812c7d-8656-4668-ba39-c8da4aaf2bfe')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -581,12 +612,12 @@ document.write(`
 
       <script>
         const buttonEl =
-          document.querySelector('#df-0dbe3a73-b417-458e-8396-67826633ff94 button.colab-df-convert');
+          document.querySelector('#df-a0812c7d-8656-4668-ba39-c8da4aaf2bfe button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-0dbe3a73-b417-458e-8396-67826633ff94');
+          const element = document.querySelector('#df-a0812c7d-8656-4668-ba39-c8da4aaf2bfe');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -728,7 +759,7 @@ memory usage: 6.0+ KB
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-0218069e-c6ba-430e-8235-eb3eee10bbbd">
+  <div id="df-e79b6688-a752-43de-af54-97486b809a7f">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -848,7 +879,7 @@ memory usage: 6.0+ KB
 </table>
 <p>150 rows × 5 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-0218069e-c6ba-430e-8235-eb3eee10bbbd')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-e79b6688-a752-43de-af54-97486b809a7f')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -899,12 +930,12 @@ memory usage: 6.0+ KB
 
       <script>
         const buttonEl =
-          document.querySelector('#df-0218069e-c6ba-430e-8235-eb3eee10bbbd button.colab-df-convert');
+          document.querySelector('#df-e79b6688-a752-43de-af54-97486b809a7f button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-0218069e-c6ba-430e-8235-eb3eee10bbbd');
+          const element = document.querySelector('#df-e79b6688-a752-43de-af54-97486b809a7f');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -971,7 +1002,7 @@ memory usage: 6.0+ KB
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-67b19eb7-dd8e-4e66-a069-04a24c1d26e5">
+  <div id="df-f694285a-21c9-4d4d-b7ec-3a28aca8012a">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1149,7 +1180,7 @@ memory usage: 6.0+ KB
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-67b19eb7-dd8e-4e66-a069-04a24c1d26e5')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-f694285a-21c9-4d4d-b7ec-3a28aca8012a')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -1200,12 +1231,12 @@ memory usage: 6.0+ KB
 
       <script>
         const buttonEl =
-          document.querySelector('#df-67b19eb7-dd8e-4e66-a069-04a24c1d26e5 button.colab-df-convert');
+          document.querySelector('#df-f694285a-21c9-4d4d-b7ec-3a28aca8012a button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-67b19eb7-dd8e-4e66-a069-04a24c1d26e5');
+          const element = document.querySelector('#df-f694285a-21c9-4d4d-b7ec-3a28aca8012a');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1439,11 +1470,11 @@ memory usage: 6.0+ KB
       </div>
     </a>
     <a class="right-next"
-       href="notebooks.html"
+       href="Tugas_Menghitung_manual_backpropagation.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Content with notebooks</p>
+        <p class="prev-next-title"><strong>Tugas Menghitung Manual Backpropagation</strong></p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
